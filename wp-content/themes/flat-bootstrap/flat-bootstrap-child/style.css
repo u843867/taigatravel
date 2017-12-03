@@ -31,7 +31,9 @@ Tags: one-column, right-sidebar, left-sidebar, fluid-layout, responsive-layout, 
 .content-header {
 	background-color: #2980b9;
 }
-
+.navbar {
+    min-height: 70px;
+}
 /* Change the main link color to dark blue. Note that the hover color is set using a 
  * neat trick with the opacity tag. This simply lightens whatever the link color is. That
  * way we don't need to try to figure out a hover color that looks good. 

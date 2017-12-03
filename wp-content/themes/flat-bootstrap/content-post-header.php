@@ -18,7 +18,7 @@
 		<?php if ( is_single() OR is_home() ) : ?>
                         <?php $author = get_the_author() . ("&nbsp | &nbsp"); ?>
 			<?php $the_date = get_the_date(); ?>
-			<p><span class="posted-on"><?php echo $author ?><span class="glyphicon glyphicon-calendar"></span>&nbsp;
+			<p><span class="posted-on"><?php // echo $author ?><span class="glyphicon glyphicon-calendar"></span>&nbsp;
 			<?php echo $the_date; ?> 
 			</span>
 	

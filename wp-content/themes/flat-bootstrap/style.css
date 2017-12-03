@@ -206,9 +206,10 @@ tr.review-score {
 }
 
 div#breadcrumbs {
-    padding-left: 2.2em;
+    padding-left: 1.25em;
     max-height: 1.5em;
     font-size: 0.8em;
+    background-color: #ffffff;
 
 }
 
@@ -228,7 +229,7 @@ p.pvalue {
 }
 
 h2.widget-title {
-    margin-top: 0px;
+    margin-top: 0.75em;
     margin-bottom: 20px;
 }
 
@@ -389,7 +390,10 @@ div.navbar-collapse.collapse {
 	margin-left: -15px;
 	margin-right: -15px;
 }
+.navbar-toggle {
 
+    margin-top: 18px;
+}
 /* Since we lightened the body font, increase font weight on active tab */
 .nav-tabs>li.active>a, 
 .nav-tabs>li.active>a:hover, 
@@ -422,24 +426,29 @@ div.navbar-collapse.collapse {
 --------------------------------------------------------------*/
 div#content {
     /*background-color: #ebebeb;*/
-    background-color: #f5f8fa;
+    /*background-color: #f5f8fa;*/
 }
 #main-grid {
-    background-color: #f5f8fa;
+    /*background-color: #f5f8fa;*/
+    background-color: #ffffff;
 }
 
 img.thumbnail.img-responsive.post-thumbnail.wp-post-image{
-    margin-bottom: 14px;
+    margin-bottom: 7px;
     margin-top: 7px;
 }
 
+div#site-branding {
+    width: -webkit-fill-available;
+}
 
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
 @media (min-width: 1200px) {
     .container {
-        width: 1280px;
+        /*width: 1280px;*/
+        width: 80%;
     }
     ul#menu-short {
     padding-left: 135px;
@@ -454,7 +463,7 @@ img.booked_image {
 @media screen and  (min-width: 768px) {
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
 
-    padding-left: 0.8em;
+    /*padding-left: 0.8em;*/
     }
     
 .navbar-nav>li {
@@ -494,6 +503,11 @@ img.booked_image {
 .home .site .site-header .main-navigation  .navbar-default {
     /*background-color: #f8f8f8;*/
     border-color: #999;
+    
+}
+
+header#masthead {
+    background-color: #ffffff;
 }
 /* Set content (page title) header to midnight blue */
 .content-header {
@@ -502,12 +516,26 @@ img.booked_image {
 }
 
 .navbar.navbar-default.navbar-static-top {
-    background-color: #c0c0c0;
+    background-color: #080808;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #555555;
+    color: #19bb9b;
     font-weight: 400;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #f5f8fa;
+    
+}
+
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: #f2f2f2;
+    background-color: #080808;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-decoration: underline;
 }
 
 .custom-logo {
@@ -521,6 +549,10 @@ img.booked_image {
 
 .logo {
     max-width: 75%;
+}
+
+ul#menu-short {
+    margin-top: 13px;
 }
 
 /*--------------------------------------------------------------
@@ -541,7 +573,7 @@ img.booked_image {
 
 /* Set our "after footer" (footer nav menu and site credits) to "not quite" black */
 .after-footer {
-	background: #222222;
+	background: #2f2f2f;
 	color: white;
 	font-size: 16px;
 }

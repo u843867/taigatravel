@@ -119,7 +119,9 @@ function xsbf_setup() {
 	
 	// This is our standard thumbnail size for things like blog posts.
 	//set_post_thumbnail_size( 750, 422, array( 'left', 'top' ) ); // crop left top
-	set_post_thumbnail_size( 640, 360, array( 'left', 'top' ) ); // crop left top
+//	set_post_thumbnail_size( 640, 360, falsearray( 'left', 'top' ) ); // crop left top
+        set_post_thumbnail_size( 640, 360, true); 
+        set_post_thumbnail_size( 640, 360, array('center','center')); 
 	
 	// This theme uses wp_nav_menu() in two locations. As of WordPress v3.0.
 	register_nav_menus( array(

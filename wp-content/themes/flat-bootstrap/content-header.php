@@ -153,6 +153,7 @@
      * IF WE HAVE A LARGE FEATURED IMAGE OR CUSTOM HEADER, THEN DISPLAY IT AS A BACK-
      * GROUND WITH THE TEXT AS AN OVERLAY.
      */
+    
     if ($image_url) :
 
         // Set larger image size on front page
@@ -208,9 +209,7 @@
 
                 </div>
 
-                }
-
-                ?> 
+              
 
                 <?php
                 // Only for static home page, show a scroll down icon
